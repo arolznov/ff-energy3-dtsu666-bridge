@@ -1,0 +1,25 @@
+{
+  "name": "ff-energy3-dtsu666-bridge",
+  "version": "1.0.0",
+  "description": "Modbus TCP bridge that exposes an F&F Energy 3 HTTP meter as a Chint DTSU666 three-phase meter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "modbus",
+    "modbus-tcp",
+    "dtsu666",
+    "chint",
+    "f&f",
+    "energy3",
+    "smart-meter",
+    "solar",
+    "inverter"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "modbus-serial": "^8.0.16"
+  }
+}
