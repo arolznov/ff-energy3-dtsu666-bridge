@@ -140,6 +140,7 @@ async function fetchEnergy() {
 
   // Reverse (Exp) — energia oddana do sieci
   setFloat(0x1028, expTot);              // ExpEp   total
+  setFloat(74,     expTot);              // mapa "classic"/SDM630, kWh, float
   setFloat(0x102A, expA);                // ExpEpA
   setFloat(0x102C, expB);                // ExpEpB
   setFloat(0x102E, expC);                // ExpEpC
