@@ -86,6 +86,7 @@ async function fetchPower() {
 
   // === Moc czynna (Pt/Pa/Pb/Pc), Unit W ×0.1W → zapis: W × 10 ===
   setFloat(0x2012, sum(p.power_active) * 10); // Pt
+  setFloat(52,     sum(p.power_active));      // Pt (mapa "classic"/SDM630, W, float)
   setFloat(0x2014, p.power_active[0]   * 10); // Pa
   setFloat(0x2016, p.power_active[1]   * 10); // Pb
   setFloat(0x2018, p.power_active[2]   * 10); // Pc
